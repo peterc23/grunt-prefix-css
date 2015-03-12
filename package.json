@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pechan/grunt-prefix-css.git"
+    "url": "git://github.com/peterc23/grunt-prefix-css.git"
   },
   "bugs": {
     "url": "https://github.com/pechan/grunt-prefix-css/issues"

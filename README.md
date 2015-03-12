@@ -27,57 +27,52 @@ grunt.initConfig({
   prefix_css: {
     options: {
       // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+    }
   },
 });
 ```
-
+     options: {
+        prefix: '.test',
+        fileSrc: 'test/fixtures/123.css',
+        fileDest: 'test/tmp/123result.css',
+        separator: '\n'
+      }
 ### Options
 
-#### options.separator
+#### options.prefix
 Type: `String`
 Default value: `',  '`
 
-A string value that is used to do something with whatever.
+A string value that is used to prefix all of your css with.
 
-#### options.punctuation
+#### options.fileSrc
 Type: `String`
 Default value: `'.'`
 
-A string value that is used to do something else with whatever else.
+A string value pointing to the source .css file.
+
+#### options.fileDest
+Type: `String`
+Default value: `','`
+
+#### options.separator
+Type: `String`
+Default value: `','`
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+
 
 ```js
 grunt.initConfig({
   prefix_css: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  prefix_css: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+     options: {
+        prefix: '.test',
+        fileSrc: 'test/fixtures/123.css',
+        fileDest: 'test/tmp/123result.css',
+        separator: '\n'
+      }
   },
 });
 ```

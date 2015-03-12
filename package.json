@@ -1,7 +1,7 @@
 {
   "name": "grunt-prefix-css",
   "description": "Grunt task to prefix all rules from css-files with some selector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/pechan/grunt-prefix-css",
   "author": {
     "name": "Peter Chan",
